@@ -14,10 +14,10 @@ This example is useful for learning about:
 ---
 
 #  📂 Project Structure
-- CMakeLists.txt # CMake build configuration
+- CMakeLists.txt 
 ##  📂 AF_UNIX
-- client.c # Client application
-- server.c # Server application
+- client.c 
+- server.c
 ---
 
 ## ⚙️ Requirements

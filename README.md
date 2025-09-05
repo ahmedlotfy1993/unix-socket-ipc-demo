@@ -13,9 +13,9 @@ This example is useful for learning about:
 
 ---
 
-## 📂 Project Structure
+#  📂 Project Structure
 - CMakeLists.txt # CMake build configuration
-#  📂 AF_UNIX
+##  📂 AF_UNIX
 - client.c # Client application
 - server.c # Server application
 ---

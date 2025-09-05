@@ -25,14 +25,17 @@ This example is useful for learning about:
 - Linux system with support for Unix Domain Sockets (all modern distros).
 - A C compiler (`gcc` or `clang`).
 - CMake version **3.10+**.
-- Basic development tools:
+- Instructions for build and run:
   ```bash
   sudo apt update
   sudo apt install build-essential cmake -y   # Ubuntu/Debian
-  git clone https://github.com/your-username/unix-socket-ipc-demo.git
   cd unix-socket-ipc-demo
   mkdir build && cd build
   cmake ..
   ./build/server
   ./build/client
   ```
+## 🧹 Cleanup
+```bash
+rm -f /tmp/DemoSocket
+```

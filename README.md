@@ -4,7 +4,8 @@ It consists of a simple **server** and **client** program:
 
 - The **client** sends integers to the server.  
 - When the client enters `0`, it stops sending numbers and requests the result.  
-- The **server** receives the integers, calculates their sum, and sends the final result back to the client.  
+- The **server** receives the integers, calculates their sum, and sends the final result back to the client (only handle one client).
+- The  **server_multiplexing** do the same functionality as the noe=rmal server plus has the ability to handle multiple clients in the same time
 
 This example is useful for learning about:
 - Local IPC using Unix domain sockets.
@@ -18,6 +19,8 @@ This example is useful for learning about:
 ##  📂 AF_UNIX
 - client.c 
 - server.c
+### 📂 multiplexing
+- server_multiplexing.c
 ---
 
 ## ⚙️ Requirements
@@ -32,7 +35,7 @@ This example is useful for learning about:
   cd unix-socket-ipc-demo
   mkdir build && cd build
   cmake ..
-  ./build/server
+  ./build/server (./build/server_multiplexing)
   ./build/client
   ```
 ## 🧹 Cleanup
